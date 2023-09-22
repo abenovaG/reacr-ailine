@@ -189,11 +189,7 @@ p {
         margin-bottom: -70px;
         margin-left: 330px;
     }
-    button {
-        width: 23px;
-        font-size: 14px;
-        height: 18px;
-    }
+
     .logoPng {
         width: 400px;
         height: 405px;
@@ -226,7 +222,7 @@ p {
     }
     p {
         font-size: 22px;
-        margin-right: -100px;
+        margin-right: -15px;
         margin-left: -8px;
     }
 }

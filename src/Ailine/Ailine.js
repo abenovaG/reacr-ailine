@@ -16,9 +16,9 @@ export const Ailine = () => {
     return (
         <div className="container">
             <div className="lung-menu">
-                <button onClick={() => changeLanguage("en")}>en</button>
+                <button onClick={() => changeLanguage("en")}>{t("en")}</button>
 
-                <button onClick={() => changeLanguage("ru")}>ru</button>
+                <button onClick={() => changeLanguage("ru")}>{t("ru")}</button>
             </div>
             <div className="displayFlex">
                 <div className="header">
