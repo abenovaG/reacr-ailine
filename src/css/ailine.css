@@ -182,21 +182,28 @@ p {
     .container {
         width: 360px;
         padding: 0;
-        margin: 20px 0 0 20px;
+        margin: 10px 0 0 10px;
     }
     .lung-menu {
-        margin-top: 52px;
-        margin-bottom: -60px;
-        margin-left: 370px;
+        margin-top: 30px;
+        margin-bottom: -70px;
+        margin-left: 330px;
+    }
+    button {
+        width: 23px;
+        font-size: 14px;
+        height: 18px;
     }
     .logoPng {
         width: 400px;
         height: 405px;
         margin-top: -60px;
+        margin-left: -45px;
     }
     .contactUs {
         margin-top: -130px;
         width: 343px;
+        margin-left: -10px;
     }
     .contact {
         margin-left: 17px;
