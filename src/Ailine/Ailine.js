@@ -17,7 +17,6 @@ export const Ailine = () => {
         <div className="container">
             <div className="lung-menu">
                 <button onClick={() => changeLanguage("en")}>{t("en")}</button>
-
                 <button onClick={() => changeLanguage("ru")}>{t("ru")}</button>
             </div>
             <div className="displayFlex">
@@ -34,7 +33,6 @@ export const Ailine = () => {
                 </div>
                 <div className="content">
                     <h1>{t("title")}</h1>
-                    <p>{t("p")}</p>
                     <h2>{t("h2")}</h2>
                     <ul>
                         <li>{t("kenguroo")}</li>
