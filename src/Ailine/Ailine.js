@@ -1,4 +1,4 @@
-import AilineLogo from '../image/favicon.ico'
+import AilineLogo from '../image/AilineLogo.png'
 import {useTranslation} from "react-i18next";
 import '../css/reset.css'
 import '../css/ailine.css'
