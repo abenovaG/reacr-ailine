@@ -1,4 +1,4 @@
-import AilineLogo from '../image/AilineLogo.png'
+import blackLogo from '../image/blackLogo.png'
 import {useTranslation} from "react-i18next";
 import '../css/reset.css'
 import '../css/ailine.css'
@@ -21,18 +21,25 @@ export const Ailine = () => {
             </div>
             <div className="displayFlex">
                 <div className="header">
-                    <img className="logoPng" src={AilineLogo} alt="AilineLogo"/>
+                    <img className="logoPng" src={blackLogo} alt="AilineLogo"/>
                         <ul className="contactUs">
                             <li className="contact">{t("contactUs")}</li>
-                            <li>{t("address")}</li>
-                            <li>+996 700 199 910</li>
-                            <li>
+                            <li className={"contact"}>{t("address")}</li>
+                            <li className={"contact"}>+996 700 199 910</li>
+                            <li className={"contact"}>
                                 <a href="https://www.instagram.com/ailine.kg/">{t("ceo")}</a>
                             </li>
                         </ul>
                 </div>
                 <div className="content">
                     <h1>{t("title")}</h1>
+                    <h3>We provide services and sustainable solutions in the field of web & mobile development</h3>
+                    <ul>
+                        <li>Web & Mobile Development</li>
+                        <li>Publishing Platforms for Media Organizations</li>
+                        <li>Open-Data, Social-Media and SMS Integration</li>
+                        <li>Website & App Support, SEO</li>
+                    </ul>
                     <h2>{t("h2")}</h2>
                     <ul>
                         <li>{t("kenguroo")}</li>

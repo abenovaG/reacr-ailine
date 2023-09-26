@@ -39,29 +39,28 @@ button:hover {
     display: flex;
     justify-content: space-around;
 }
+
 .logoPng {
     width: 300px;
-    height: 280px;
+    height: 150px;
     max-width: 100%;
-    height: auto;
 }
 .contactUs {
     width: 240px;
-    margin-top: -40px;
+    margin-top: 40px;
     margin-left: 40px;
 }
 .contact {
-    margin-left: 8px;
-    font-size: 20px;
+    margin-left: -10px;
 }
 .content {
     width: 540px;
-    margin-left: 95px;
+    margin-left: -115px;
     padding: 0 15px;
 }
 li {
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     margin-left: 24px;
 }
 a {
@@ -71,7 +70,7 @@ a {
 }
 h1 {
     font-family: 'Cabin', sans-serif;
-    font-size: 3.3rem;
+    font-size: 52px;
     font-weight: 300;
     line-height: 1.1;
 }
@@ -82,7 +81,12 @@ h2 {
     font-weight: 400;
     margin-bottom: 8px;
 }
-
+h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
 p {
     font-size: 1.25rem;
     font-weight: 300;
