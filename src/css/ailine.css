@@ -229,6 +229,7 @@ p {
     }
     .contactUs {
         width: 343px;
+        margin-left: -7px;
     }
     .contact {
         margin-left: 17px;
