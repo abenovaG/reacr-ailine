@@ -220,7 +220,7 @@ p {
     .lung-menu {
         margin-top: 30px;
         margin-bottom: -10px;
-        margin-left: 380px;
+        margin-left: 372px;
     }
     .logoPng {
         width: 400px;
@@ -238,8 +238,9 @@ p {
         margin-left: 15px;
     }
     li {
-        margin-left: 15px;
+        margin-left: 12px;
         font-size: 16px;
+        width: 345px;
     }
     h1 {
         font-size: 45px;
@@ -258,7 +259,7 @@ p {
         margin-left: -8px;
     }
     .arrow {
-        margin-left: 355px;
+        margin-left: 330px;
     }
     .xImage {
         margin-left: 373px;
