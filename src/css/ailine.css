@@ -9,6 +9,9 @@ body {
     line-height: 1.5;
     color: #212529;
 }
+h1 h2 h3 h4 {
+    font-family: 'Cabin', sans-serif;
+}
 .lung-menu {
     display: flex;
     justify-content: end;
@@ -42,11 +45,12 @@ button:hover {
 
 .logoPng {
     width: 300px;
-    height: 150px;
+    height: 125px;
     max-width: 100%;
+    margin-top: 3px;
 }
 .contactUs {
-    width: 240px;
+    width: 205px;
     margin-top: 40px;
     margin-left: 40px;
 }
@@ -55,7 +59,7 @@ button:hover {
 }
 .content {
     width: 540px;
-    margin-left: -115px;
+    margin-left: -77px;
     padding: 0 15px;
 }
 li {
@@ -77,15 +81,27 @@ h1 {
 h2 {
     font-family: 'Cabin', sans-serif;
     font-size: 2rem;
-    margin-top: 50px;
+    margin-top: 15px;
     font-weight: 400;
     margin-bottom: 8px;
 }
 h3 {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     font-size: 19px;
     font-weight: 400;
+}
+.arrow {
+    width: 22px;
+    margin-left: 485px;
+    margin-top: -11px;
+}
+.modal {
+    background-color: #edeeef;
+}
+.xImage {
+    width: 22px;
+    margin-left: 488px;
 }
 p {
     font-size: 1.25rem;
@@ -102,7 +118,7 @@ p {
         margin: 48px auto 0;
     }
     .lung-menu {
-        margin-right: 23px;
+        margin-right: 38px;
         margin-bottom: 7px;
     }
     .lung-menu a {
@@ -110,39 +126,38 @@ p {
     }
     .logoPng {
         width: 230px;
-        height: 235px;
-        margin-top: -50px;
+        height: 100px;
     }
     .contactUs {
-        margin-top: -60px;
+
     }
     .contact {
         font-size: 17px;
     }
     .content {
-        margin-left: 65px;
+        width: 460px;
+        margin-left: 5px;
     }
-    h1 {
-        font-size: 43px;
+    .arrow {
+        margin-left: 408px;
     }
-    h2 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 17px;
-    }
-    li {
-        font-size: 15px;
-        margin-left: 18px;
+    .xImage {
+        margin-left: 408px;
     }
 }
 @media only screen and (max-width: 768px){
+    .displayFlex {
+        flex-wrap: wrap;
+    }
     .container {
         width: 510px;
     }
+    .header {
+        margin-left: -95px;
+    }
     .logoPng {
-        width: 180px;
-        height: 180px;
+        width: 400px;
+        height: 150px;
     }
     .lung-menu {
         margin-right: 13px;
@@ -153,30 +168,42 @@ p {
     button {
         margin-bottom: 3px;
     }
-    h1 {
-        font-size: 25px;
-    }
     p {
         font-size: 14px;
     }
+    h1 {
+        margin-top: 15px;
+    }
     h2 {
+        font-size: 30px;
+        margin-top: 45px;
+    }
+    h3 {
         font-size: 20px;
-        margin-top: 21px;
+        width: 510px;
     }
     li {
-        font-size: 13px;
-        margin-left: 12px;
+        width: 450px;
         margin-bottom: 6px;
     }
     .contactUs {
-        margin-left: 15px;
-        width: 213px;
+        margin-left: 17px;
+        width: 370px;
     }
     .contact {
-        font-size: 15px;
+        font-size: 16px;
     }
     .content {
-        margin-left: 0;
+        margin-left: -72px;
+    }
+    .arrow {
+        margin-left: 455px;
+    }
+    .xImage {
+        margin-left: 468px;
+    }
+    .modal {
+        width: 490px;
     }
 }
 @media only screen and (max-width: 480px){
@@ -188,22 +215,20 @@ p {
         padding: 0;
         margin: 10px 0 0 0;
     }
+    .header {
+        margin-left: -15px;
+    }
     .lung-menu {
         margin-top: 30px;
-        margin-bottom: -70px;
-        margin-left: 350px;
+        margin-bottom: -10px;
+        margin-left: 380px;
     }
-
     .logoPng {
         width: 400px;
-        height: 405px;
-        margin-top: -60px;
-        margin-left: -45px;
+        height: 150px;
     }
     .contactUs {
-        margin-top: -130px;
         width: 343px;
-        margin-left: -25px;
     }
     .contact {
         margin-left: 17px;
@@ -211,21 +236,38 @@ p {
     }
     .content {
         margin-top: 10px;
+        margin-left: 15px;
     }
     li {
+        margin-left: 15px;
+        width: 410px;
         font-size: 16px;
     }
     h1 {
         font-size: 45px;
         margin-left: -8px;
+        margin-top: 5px;
     }
     h2 {
         font-size: 29px;
         margin-left: -8px;
     }
+    h3 {
+        width: 430px;
+        margin-left: -11px;
+    }
     p {
         font-size: 22px;
         margin-right: -15px;
         margin-left: -8px;
+    }
+    .arrow {
+        margin-left: 395px;
+    }
+    .xImage {
+        margin-left: 403px;
+    }
+    .modal {
+        width: 425px;
     }
 }
