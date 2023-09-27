@@ -220,14 +220,15 @@ p {
     .lung-menu {
         margin-top: 30px;
         margin-bottom: -10px;
-        margin-left: 372px;
+        margin-left: 360px;
     }
     .logoPng {
-        width: 400px;
+        width: 380px;
         height: 150px;
     }
     .contactUs {
         width: 343px;
+        margin-left: 7px;
     }
     .contact {
         margin-left: 17px;
@@ -240,7 +241,7 @@ p {
     li {
         margin-left: 12px;
         font-size: 16px;
-        width: 345px;
+        width: 350px;
     }
     h1 {
         font-size: 45px;
@@ -262,9 +263,9 @@ p {
         margin-left: 330px;
     }
     .xImage {
-        margin-left: 373px;
+        margin-left: 348px;
     }
     .modal {
-        width: 395px;
+        width: 370px;
     }
 }
