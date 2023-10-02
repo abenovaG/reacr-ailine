@@ -1,6 +1,7 @@
 import blackLogo from '../image/blackLogo.png'
 import shortArrow from '../image/shortArrow.png'
 import x from '../image/x.png'
+import upArrow from '../image/up-arrow.svg'
 import {useTranslation} from "react-i18next";
 import '../css/reset.css'
 import '../css/ailine.css'
@@ -63,24 +64,22 @@ export const Ailine = () => {
                         </li>
                         <img className="arrow" title="see more" onClick={seeInfo} src={shortArrow} alt="arrow"/>
                         {openInfo && (
-                            <div className="modal">
-                                <ul>
-                                    <img className="xImage" onClick={closeInfo} src={x} alt="x"/>
-                                    <li>
-                                        <a href="https://alfa-story.kg/">{t("alfa")}</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://bitok.kg/">{t("bitok")}</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://dlxlimousine.com/">{t("dlx")}</a>
-                                    </li>
+                            <ul>
+                                <img className="xImage" onClick={closeInfo} src={upArrow} alt="x"/>
+                                <li>
+                                    <a href="https://alfa-story.kg/">{t("alfa")}</a>
+                                </li>
+                                <li>
+                                    <a href="https://bitok.kg/">{t("bitok")}</a>
+                                </li>
+                                <li>
+                                    <a href="https://dlxlimousine.com/">{t("dlx")}</a>
+                                </li>
 
-                                    <li>
-                                        <a href="https://t-express.us/">{t("express")}</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                <li>
+                                    <a href="https://t-express.us/">{t("express")}</a>
+                                </li>
+                            </ul>
                         )}
 
                     </ul>

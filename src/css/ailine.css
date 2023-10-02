@@ -201,9 +201,6 @@ p {
     .xImage {
         margin-left: 468px;
     }
-    .modal {
-        width: 490px;
-    }
 }
 @media only screen and (max-width: 480px){
     .displayFlex {
@@ -265,8 +262,5 @@ p {
     }
     .xImage {
         margin-left: 348px;
-    }
-    .modal {
-        width: 370px;
     }
 }
