@@ -1,23 +1,16 @@
 import blackLogo from '../image/blackLogo.png'
-import shortArrow from '../image/shortArrow.png'
-import x from '../image/x.png'
-import upArrow from '../image/up-arrow.svg'
 import {useTranslation} from "react-i18next";
 import '../css/reset.css'
 import '../css/ailine.css'
 import '../18n'
 import {useState} from "react";
+import {InfoButton} from "../component/InfoButton/InfoButton";
+import {Transition} from "react-transition-group";
 
 export const Ailine = () => {
-    const [openInfo, setOpenInfo] = useState(false)
+    const [isOpen, setOpen] = useState(false)
     const {t, i18n} = useTranslation()
 
-    const seeInfo = () => {
-        setOpenInfo(true);
-    }
-    const closeInfo = () => {
-        setOpenInfo(false);
-    }
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
@@ -62,26 +55,32 @@ export const Ailine = () => {
                         <li>
                             <a href="https://kvadrat.kg/">{t("kvadrat")}</a>
                         </li>
-                        <img className="arrow" title="see more" onClick={seeInfo} src={shortArrow} alt="arrow"/>
-                        {openInfo && (
-                            <ul>
-                                <img className="xImage" onClick={closeInfo} src={upArrow} alt="x"/>
-                                <li>
-                                    <a href="https://alfa-story.kg/">{t("alfa")}</a>
-                                </li>
-                                <li>
-                                    <a href="https://bitok.kg/">{t("bitok")}</a>
-                                </li>
-                                <li>
-                                    <a href="https://dlxlimousine.com/">{t("dlx")}</a>
-                                </li>
+                        <div className="dropDown">
+                           <InfoButton isActive={isOpen} onClick={() => setOpen(!isOpen)} />
+                            <div>
+                                <Transition in={isOpen} timeout={300}>
+                                {(state) => (
+                                    <nav className={`info info--${state}`}>
+                                        <ul>
+                                            <li>
+                                                <a href="https://alfa-story.kg/">{t("alfa")}</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://bitok.kg/">{t("bitok")}</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://dlxlimousine.com/">{t("dlx")}</a>
+                                            </li>
 
-                                <li>
-                                    <a href="https://t-express.us/">{t("express")}</a>
-                                </li>
-                            </ul>
-                        )}
-
+                                            <li>
+                                                <a href="https://t-express.us/">{t("express")}</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                )}
+                                </Transition>
+                            </div>
+                        </div>
                     </ul>
                     <h2>{t("title2")}</h2>
                     <h3>{t("NGO")}</h3>
