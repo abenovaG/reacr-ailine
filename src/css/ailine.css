@@ -94,6 +94,7 @@ h3 {
 .dropDown {
     position: relative;
 }
+
 .info {
     position: absolute;
     transform: scale(0);
@@ -107,20 +108,25 @@ h3 {
     border-top: 2px solid black;
     border-left: 2px solid black;
     transform: rotate(-135deg);
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
 }
 .arrow.active {
     transform: rotate(45deg);
 }
-.info.active {
-    height: auto;
-}
 .info--entering {
+    position: relative;
+    left: 0;
+    top: 10px;
     transform: scale(1);
+    transition: transform 0.3ms;
 }
 .info--entered {
+    position: relative;
+    left: 0;
+    top: 10px;
     transform: scale(1);
+    transition: transform 0.3ms;
 }
 .info-exiting {
     transform: scale(1);
